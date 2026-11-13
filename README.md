@@ -6,8 +6,11 @@ Xcrap XML Extractor is a package of the Xcrap framework that extracts data from 
 
 ## 📦 Installation
 
+> [!IMPORTANT]
+> `@xcrap/extractor` is a **peer dependency** and must be installed alongside this package.
+
 ```cmd
-npm i @xcrap/xml-extractor
+npm i @xcrap/xml-extractor @xcrap/extractor
 ```
 
 ---
