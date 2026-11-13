@@ -6,8 +6,8 @@ TypeScript package `@xcrap/xml-extractor`.
 
 - `npm run dev`: runs `src/index.ts` with tsx.
 - `npm run build`: compiles TypeScript to `dist/`.
-- `npm run lint`: runs ESLint.
-- `npm run lint:fix`: runs ESLint with auto-fix.
+- `npm run lint`: runs oxlint.
+- `npm run lint:fix`: runs oxlint with auto-fix.
 - `npm run format`: formats the code with Prettier.
 - `npm run test`: runs the tests with Vitest.
 - `npm run test:cov`: generates the coverage report.
@@ -16,7 +16,7 @@ TypeScript package `@xcrap/xml-extractor`.
 
 - `src/`: source code (entrypoint at `src/index.ts`).
 - `__tests__/`: unit tests (Vitest).
-- `eslint.config.mjs`: ESLint flat config with Prettier and unused-imports.
+- `.oxlintrc.json`: oxlint config (TypeScript rules, unused vars).
 - `.prettierrc.js`: Prettier (4 spaces, no semicolons, double quotes, sorted imports).
 
 ## Conventions
