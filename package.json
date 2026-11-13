@@ -1,6 +1,27 @@
 {
   "name": "@xcrap/xml-extractor",
   "version": "0.1.0",
+  "description": "Xcrap XML Extractor is a package of the Xcrap framework, it was developed to take care of the data extraction part of XML documents using XPath and declarative models, integrating with @xcrap/extractor.",
+  "keywords": [
+    "xcrap",
+    "xml",
+    "xml-extractor",
+    "extractor",
+    "parser",
+    "xpath",
+    "web scraping",
+    "scrapy"
+  ],
+  "homepage": "https://github.com/xcrap-dev/xml-extractor#readme",
+  "bugs": {
+    "url": "https://github.com/xcrap-dev/xml-extractor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcrap-dev/xml-extractor.git"
+  },
+  "license": "MIT",
+  "author": "Marcuth",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -9,6 +30,9 @@
     "dist/*",
     "!/**/__tests__"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsx ./src/index.ts",
@@ -18,27 +42,27 @@
     "test": "vitest",
     "test:cov": "vitest run --coverage"
   },
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.12",
+    "xpath": "^0.0.36"
   },
-  "keywords": [
-    "marcuth"
-  ],
-  "author": "Marcuth",
-  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@types/node": "^26.6.6",
     "@vitest/coverage-v8": "^5.1.0",
+    "@xcrap/extractor": "^0.3.2",
     "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.7",
     "eslint-plugin-unused-imports": "^4.4.1",
     "prettier": "^3.10.1",
     "tsx": "^4.23.15",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.2",
     "typescript-eslint": "^8.72.2",
     "vitest": "^5.1.0"
+  },
+  "peerDependencies": {
+    "@xcrap/extractor": "^0.3.2"
   }
 }
